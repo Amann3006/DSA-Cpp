@@ -4,13 +4,13 @@
 using namespace std;
 
 void leftrotate(int arr[],int n){
-    int temp=arr[0]; //store 1 element
+    int temp=arr[n-1]; //store 1 element
     for(int i=1; i<n; i++){
-        arr[i-1]=arr[i];
+        arr[i+1]=arr[i];
         
     }
     //after loop {3,0,20,20}
-    arr[n-1]=temp;
+    arr[0]=temp;
     //after this line
     //{3,0,20,1}
     
