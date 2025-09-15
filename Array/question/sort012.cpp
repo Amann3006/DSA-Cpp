@@ -28,13 +28,32 @@ void sortColors(vector<int>& nums) {
         }
     }
 }
+//dutch national flag algorithm
+void sort012(vector<int>&arr){
+    int low=0,mid=0;
+    int high=arr.size()-1;
 
+    while(low<=mid){
+        if(arr[low]==0){
+        swap(arr[low],arr[mid]);
+        low++;
+        mid++;
+    }
+       else if(arr[mid]==1){
+        mid++;
+       }
+       else{
+        swap(arr[mid],arr[high]);
+        high--;
+       }
+     }
+}
 int main() {
     vector<int> nums = {2, 0, 2, 1, 1, 0};
 
     sortColors(nums);
-
-    for (int i = 0; i < nums.size(); i++) {
+    sort012(nums);
+    for (int i = 0; i<nums.size(); i++) {
         cout << nums[i] << " ";
     }
     cout << endl;

@@ -28,6 +28,8 @@ void movez(int arr[],int n){
 }
 
 
+
+
 int main(){
     int arr[]={0,3,0,20};
     int n=4;
