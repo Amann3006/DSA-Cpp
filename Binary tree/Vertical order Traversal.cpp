@@ -80,4 +80,3 @@ int main() {
     printresult(verticaltraversal);
 
     return 0;
-}
